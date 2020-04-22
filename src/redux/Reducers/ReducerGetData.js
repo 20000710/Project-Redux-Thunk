@@ -7,7 +7,7 @@ const initialState = {
     error: null,
 };
 
-const getAPI = (state = initialState, action) => {
+const ReducerGetData = (state = initialState, action) => {
     switch (action.type) {
         case GET_DATA_BEGIN:
             return {
@@ -29,8 +29,8 @@ const getAPI = (state = initialState, action) => {
             }
             
         default:
-            return state
+            return state;
     }   
 }
 
-export default getAPI;
+export default ReducerGetData;
