@@ -33,3 +33,13 @@ export const getDataAPI = () => {
         .catch(error => dispatch(getDataFailed(error.message)))
     }
 }
+
+export const postDataAPI = (postObj) =>{
+    return (dispatch) => {
+        dispatch(getDataBegin());
+
+        axios.post("https://jsonplaceholder.typicode.com/todos", postObj)
+        .then(()=> dispatch(getDataAPI()))
+        .catch((error) => dispatch(getDataFailed(error.message)));
+    }
+}

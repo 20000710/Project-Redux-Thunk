@@ -1,5 +1,13 @@
-.App {
+body{
+  background: linear-gradient(90deg,#4f9bd9,#25c5df);
+}
+
+.App { 
   display: flex;
   justify-content: center;
+}
+
+li{
+  text-decoration: none;
 }
 

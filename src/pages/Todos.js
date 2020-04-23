@@ -3,6 +3,7 @@ import { getDataAPI } from '../redux/Actions/ActionGetData';
   
 import { connect } from 'react-redux';
 
+
 const Todos = (props) => {
     console.log("todos", props)
 
@@ -40,8 +41,9 @@ const Todos = (props) => {
 }
 
 const mapStateToProps = (props) =>{
+    console.log("mapProps", props)
     return{
-        dataApi: props.data
+        dataApi: props.reducer.data
     }
 }
 
