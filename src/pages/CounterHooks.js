@@ -11,11 +11,11 @@ const CounterHooks = () => {
     const dispatchCount = useDispatch();
     
     return (
-        <div>
+        <div style={{display: "flex", alignItems: "center", width: "fit-content", flexDirection: "column" }} >
             <h1>Counter Hooks</h1>
 
             <button onClick={() => dispatchCount(addItem())}>+</button>
-            <h3>{selectCount.item}</h3>
+            <h3 >{selectCount.item}</h3>
             <button onClick={() => dispatchCount(subtractItem())}>-</button>
         </div>
     )
